@@ -129,8 +129,6 @@ last_block_hash = digest
 
 TPCoins.append (block0)
 
-dump_blockchain(TPCoins)
-
-# for transaction in transactions:
-#     display_transaction(transaction)
-#     print('--------------')
+for transaction in transactions:
+    display_transaction(transaction)
+    print('--------------')

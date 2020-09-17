@@ -24,15 +24,6 @@ transactions = []
 last_block_hash = ""
 TPCoins = []
 
-def dump_blockchain (self):
-    print ("Number of blocks in the chain: " + str(len (self)))
-    for x in range (len(TPCoins)):
-        block_temp = TPCoins[x]
-        print ("block # " + str(x))
-        for transaction in block_temp.verified_transactions:
-            display_transaction (transaction)
-            print ('--------------')
-    print ('=====================================')
 
 Dinesh = Client()
 # Ramesh = Client()
@@ -127,10 +118,6 @@ block0.verified_transactions.append(t0)
 digest = hash(block0)
 last_block_hash = digest
 
-TPCoins.append (block0)
-
-dump_blockchain(TPCoins)
-
-# for transaction in transactions:
-#     display_transaction(transaction)
-#     print('--------------')
+for transaction in transactions:
+    display_transaction(transaction)
+    print('--------------')
